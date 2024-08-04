@@ -80,7 +80,7 @@ def warp_ip():
                 break
             else:
                 ip = ips.split(',')[0]
-                config_prefix = f'warp://{ip}?ifp=10-20\n'
+                config_prefix = f'warp://{ip}?ifp=1-3&ifpm=m6\n'
                 config_prefixes += config_prefix
     return config_prefixes, formatted_time
 
